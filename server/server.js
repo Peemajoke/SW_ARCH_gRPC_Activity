@@ -1,9 +1,7 @@
-const dotenv = require('dotenv')
 const PROTO_PATH="./restaurant.proto";
 const connectDB = require('../config/db')
 const menuModel = require('./models/Menu')
 
-dotenv.config({path:'./config/.env'})
 connectDB()
 
 var grpc = require("grpc");
